@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+.botones {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+#laberinto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.fila {
+    display: flex;
+}
+
+.celda {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+}
+
+.pared {
+    background-color: #333;
+}
+
+.camino {
+    background-color: #ffffff;
+}
+
+.celda.inicio {
+    background-color: #4CAF50; /* Verde */
+}
+
+.celda.fin {
+    background-color: #f44336; /* Rojo */
+}
+
+/* .celda.camino-solucion {
+    background-color: yellow;
+} */
+
+#solucion {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.camino-solucion {
+    background-color: yellow !important;
+}
